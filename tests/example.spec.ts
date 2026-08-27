@@ -50,8 +50,8 @@ test('navigation to docs', async({page})=>{
 import { test, expect } from '../fixtures';
 
 test('has title', async ({ page, playwrightDevPage  }) => {
-  //await expect(page).toHaveTitle(/Playwright/);
-  await expect(page).toHaveTitle(/ThisWillNeverMatch/);
+  await expect(page).toHaveTitle(/Playwright/);
+  //await expect(page).toHaveTitle(/ThisWillNeverMatch/);  - - Deliberately break a test to see a real CI failure to witness TraceViewer in action   
 });
 
 test('get started link', async ({ page, playwrightDevPage  }) => {
