@@ -50,7 +50,8 @@ test('navigation to docs', async({page})=>{
 import { test, expect } from '../fixtures';
 
 test('has title', async ({ page, playwrightDevPage  }) => {
-  await expect(page).toHaveTitle(/Playwright/);
+  //await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/ThisWillNeverMatch/);
 });
 
 test('get started link', async ({ page, playwrightDevPage  }) => {
